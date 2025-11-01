@@ -1,3 +1,4 @@
+import tkinter
 import random
 
 # -----------------------------
@@ -5,7 +6,6 @@ import random
 # -----------------------------
 with open(r"C:\Users\saeza\OneDrive\Desktop\A1 Advanced Programming\Exercise 2\jokes.txt", "r") as file:
     jokes = [line.strip() for line in file if "?" in line]
-
 # -----------------------------
 # Function to tell a single joke
 # -----------------------------
@@ -15,7 +15,6 @@ def tell_joke(jokes):
     print("\n" + setup + "?")
     input("Press Enter...")
     print(punchline)
-
 # -----------------------------
 # Function to handle repeating jokes
 # -----------------------------
@@ -31,7 +30,6 @@ def joke_loop(jokes):
                 return  # exit the loop
             else:
                 print("Please type 'yes' or 'no'.")
-
 # -----------------------------
 # Main function
 # -----------------------------
@@ -52,7 +50,6 @@ def main():
             break
         else:
             print("Say 'Alexa tell me a Joke' to hear a joke, or 'quit' to exit.")
-
 # -----------------------------
 # Run the program
 # -----------------------------
